@@ -1,0 +1,322 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 437
+  ClientWidth = 424
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object BindNavigator1: TBindNavigator
+    Align = Bottom
+    Position.Y = 412.000000000000000000
+    Size.Width = 424.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DataSource = BindSourceDB1
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object Circle1: TCircle
+    Align = Top
+    Fill.Bitmap.WrapMode = Tile
+    Fill.Kind = Bitmap
+    Margins.Top = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 424.000000000000000000
+    Size.Height = 141.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Layout1: TLayout
+    Align = Client
+    Margins.Left = 30.000000000000000000
+    Margins.Top = 30.000000000000000000
+    Margins.Right = 30.000000000000000000
+    Margins.Bottom = 30.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 191.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Client
+      Size.Width = 364.000000000000000000
+      Size.Height = 191.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 26.046100753636520000
+        end
+        item
+          Value = 73.953899246363480000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Label1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = lbcod
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = Label3
+          Row = 1
+        end
+        item
+          Column = 1
+          Control = lbname
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = Label5
+          Row = 2
+        end
+        item
+          Column = 1
+          Control = lblastname
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = Label7
+          Row = 3
+        end
+        item
+          Column = 1
+          Control = lbemail
+          Row = 3
+        end>
+      RowCollection = <
+        item
+          Value = 24.999845300583800000
+        end
+        item
+          Value = 24.999802097096080000
+        end
+        item
+          Value = 25.000204930226180000
+        end
+        item
+          Value = 25.000147672093950000
+        end>
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Margins.Right = 6.000000000000000000
+        Size.Width = 88.807807922363280000
+        Size.Height = 47.749706268310550000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+        Text = 'C'#243'digo:'
+        TabOrder = 0
+      end
+      object lbcod: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 4.000000000000000000
+        Size.Width = 265.192199707031300000
+        Size.Height = 47.749706268310550000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = 'lbcod'
+        TabOrder = 1
+      end
+      object Label3: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Margins.Right = 6.000000000000000000
+        Size.Width = 88.807807922363280000
+        Size.Height = 47.749622344970700000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+        Text = 'Nome:'
+        TabOrder = 2
+      end
+      object lbname: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 4.000000000000000000
+        Size.Width = 265.192199707031300000
+        Size.Height = 47.749622344970700000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = 'lbname'
+        TabOrder = 3
+      end
+      object Label5: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Margins.Right = 6.000000000000000000
+        Size.Width = 88.807807922363280000
+        Size.Height = 47.750396728515630000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+        Text = 'Sobrenome:'
+        TabOrder = 4
+      end
+      object lblastname: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 4.000000000000000000
+        Size.Width = 265.192199707031300000
+        Size.Height = 47.750396728515630000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = 'lblastname'
+        TabOrder = 5
+      end
+      object Label7: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Margins.Right = 6.000000000000000000
+        Size.Width = 88.807807922363280000
+        Size.Height = 47.750274658203130000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+        Text = 'Email:'
+        TabOrder = 6
+      end
+      object lbemail: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 4.000000000000000000
+        Size.Width = 265.192199707031300000
+        Size.Height = 47.750274658203130000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = 'lbemail'
+        TabOrder = 7
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://reqres.in/api'
+    Params = <>
+    Left = 320
+    Top = 120
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Params = <
+      item
+        Name = 'per_page'
+        Value = '20'
+      end>
+    Resource = 'users'
+    Response = RESTResponse1
+    Left = 320
+    Top = 184
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    RootElement = 'data'
+    Left = 320
+    Top = 248
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse1
+    TypesMode = Rich
+    Left = 320
+    Top = 312
+  end
+  object FDMemTable1: TFDMemTable
+    AfterScroll = FDMemTable1AfterScroll
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 320
+    Top = 368
+    object FDMemTable1id: TFloatField
+      FieldName = 'id'
+    end
+    object FDMemTable1email: TWideStringField
+      FieldName = 'email'
+      Size = 50
+    end
+    object FDMemTable1first_name: TWideStringField
+      FieldName = 'first_name'
+    end
+    object FDMemTable1last_name: TWideStringField
+      FieldName = 'last_name'
+    end
+    object FDMemTable1avatar: TWideStringField
+      FieldName = 'avatar'
+      Size = 60
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 256
+    Top = 272
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'id'
+      Component = lbcod
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'email'
+      Component = lbemail
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'first_name'
+      Component = lbname
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText4: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'last_name'
+      Component = lblastname
+      ComponentProperty = 'Text'
+    end
+  end
+  object NetHTTPClient1: TNetHTTPClient
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 384
+    Top = 44
+  end
+end
